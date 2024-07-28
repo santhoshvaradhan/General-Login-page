@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer_login</title>
+    <script src=  "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">  </script> 
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="loginstyle.css">
+    
+</head>
+<body>
+    <div class="container customers">
+        <div class="wrapper customers">
+          <div class="title"><span>Customer Login</span></div>
+          <form class='customers' action="#">
+            <div class="row">
+              <i class="fa fa-envelope icon"></i>
+              <input type="text" id="login-email" placeholder="Email" required></input>
+            </div>
+            <div class="div-span">
+                 <span class="login-error" id="loginemailerror">Please enter valid email</span>
+              </div>
+           
+            <div class="row">
+              <i class="fas fa-lock icon"></i>
+              <input type="password"id="login-password" placeholder="Password" required></input>
+              <i class="fa fa-eye-slash eye-icon"></i>
+            </div>
+            <div class="div-span">
+                <span class="login-error" id="loginpassworderror">Password should minimum eight characters, atleast one uppercase letter, one lowercase letter, one number and one special character</span>
+            </div>
+
+            <div class="pass"><a href="#">Forgot password?</a></div>
+            <div class="row button">
+              <input id="Login-button" type="submit" value="Login" ></i></input>
+            </div>
+            <div class="signup-link">Not a member? <a href="#" onClick="">Register now</a></div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
